@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74FC0CB01DF2984B00E07CF7 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 74FC0CAF1DF2984B00E07CF7 /* logo.png */; };
+		74FC0CB41DF29C1600E07CF7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74FC0CB31DF29C1600E07CF7 /* LaunchScreen.xib */; };
 		844436631DF29086001DEA32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436621DF29086001DEA32 /* AppDelegate.swift */; };
 		844436651DF29086001DEA32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436641DF29086001DEA32 /* ViewController.swift */; };
 		844436681DF29086001DEA32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844436661DF29086001DEA32 /* Main.storyboard */; };
 		8444366A1DF29087001DEA32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844436691DF29087001DEA32 /* Assets.xcassets */; };
-		8444366D1DF29087001DEA32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8444366B1DF29087001DEA32 /* LaunchScreen.storyboard */; };
 		844436781DF29087001DEA32 /* KyuntoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436771DF29087001DEA32 /* KyuntoAppTests.swift */; };
 		844436831DF29087001DEA32 /* KyuntoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436821DF29087001DEA32 /* KyuntoAppUITests.swift */; };
 /* End PBXBuildFile section */
@@ -34,12 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74FC0CAF1DF2984B00E07CF7 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../logo.png; sourceTree = "<group>"; };
+		74FC0CB31DF29C1600E07CF7 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8444365F1DF29086001DEA32 /* KyuntoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KyuntoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844436621DF29086001DEA32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844436641DF29086001DEA32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		844436671DF29086001DEA32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		844436691DF29087001DEA32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8444366C1DF29087001DEA32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8444366E1DF29087001DEA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844436731DF29087001DEA32 /* KyuntoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KyuntoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844436771DF29087001DEA32 /* KyuntoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KyuntoAppTests.swift; sourceTree = "<group>"; };
@@ -101,7 +103,8 @@
 				844436641DF29086001DEA32 /* ViewController.swift */,
 				844436661DF29086001DEA32 /* Main.storyboard */,
 				844436691DF29087001DEA32 /* Assets.xcassets */,
-				8444366B1DF29087001DEA32 /* LaunchScreen.storyboard */,
+				74FC0CB31DF29C1600E07CF7 /* LaunchScreen.xib */,
+				74FC0CAF1DF2984B00E07CF7 /* logo.png */,
 				8444366E1DF29087001DEA32 /* Info.plist */,
 			);
 			path = KyuntoApp;
@@ -235,7 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8444366D1DF29087001DEA32 /* LaunchScreen.storyboard in Resources */,
+				74FC0CB41DF29C1600E07CF7 /* LaunchScreen.xib in Resources */,
+				74FC0CB01DF2984B00E07CF7 /* logo.png in Resources */,
 				8444366A1DF29087001DEA32 /* Assets.xcassets in Resources */,
 				844436681DF29086001DEA32 /* Main.storyboard in Resources */,
 			);
@@ -305,14 +309,6 @@
 				844436671DF29086001DEA32 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8444366B1DF29087001DEA32 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8444366C1DF29087001DEA32 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -512,6 +508,7 @@
 				844436891DF29087001DEA32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8444368A1DF29087001DEA32 /* Build configuration list for PBXNativeTarget "KyuntoAppTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +517,7 @@
 				8444368C1DF29087001DEA32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8444368D1DF29087001DEA32 /* Build configuration list for PBXNativeTarget "KyuntoAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +526,7 @@
 				8444368F1DF29087001DEA32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
