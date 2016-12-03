@@ -44,20 +44,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqN-I7-sDj" customClass="animationButton" customModule="KyuntoApp" customModuleProvider="target">
-                                <frame key="frameInset" minX="94" minY="211" width="186" height="215"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqN-I7-sDj" customClass="animationButton" customModule="KyuntoApp" customModuleProvider="target">
+                                <frame key="frameInset" minX="-94" minY="7" width="563" height="652"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.87806490384615388" green="0.69305665064606747" blue="0.068272787186192133" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="kyunto_button.png"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="imageColorOn">
-                                        <color key="value" red="1" green="0.78530905149999997" blue="0.072342772279999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.87212468180000002" blue="0.1337544088" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="imageColorOff">
-                                        <color key="value" red="1" green="0.66481375399999998" blue="0.113253857" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.84350801410645626" blue="0.049220524118718689" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
-                                        <color key="value" red="1" green="0.87212468180000002" blue="0.1337544088" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.78530905149999997" blue="0.072342772279999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
                                         <color key="value" red="0.9528245192" green="0.4380898755" blue="0.45854997260000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -70,12 +74,49 @@
                                     <action selector="touch:" destination="R7O-J2-kVn" eventType="touchUpInside" id="sxZ-BE-qIN"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.55000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="Zxz-ry-u1W">
+                                <frame key="frameInset" minX="88" minY="251" width="213" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="0キュン">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="44" name="BokutachinoGothic2Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PUSH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9c-a2-1gj">
+                                <frame key="frameInset" minX="154" minY="377" width="66" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" alpha="0.59999999999999998" contentMode="scaleToFill" semanticContentAttribute="spatial" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EDB-jf-s2M">
+                                <frame key="frameInset" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ld-39-X1g">
+                                        <frame key="frameInset" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <items>
+                                            <navigationItem title="Title" id="sTe-Pq-vBU"/>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.35747195512820518" green="0.28041685681037781" blue="0.03031920031673975" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="rAT-bh-wbf"/>
                     <connections>
+                        <outlet property="AlertView" destination="EDB-jf-s2M" id="hvF-L0-cUp"/>
                         <outlet property="KyuntoButton" destination="kqN-I7-sDj" id="Ly7-0P-LhV"/>
+                        <outlet property="label" destination="Zxz-ry-u1W" id="Jh4-sW-sHV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eC-k4-H8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -99,6 +140,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="reW-tf-bHK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-489" y="-710"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="P6j-2a-QqW">
+            <objects>
+                <viewController id="arQ-Rm-y2V" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MpN-NA-qz4"/>
+                        <viewControllerLayoutGuide type="bottom" id="zNn-qx-Mwr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uCb-x9-3j1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bz7-6V-8cp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>

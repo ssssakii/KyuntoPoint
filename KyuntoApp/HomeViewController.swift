@@ -11,9 +11,17 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    //Button宣言
+    //キュントボタン宣言
+    @IBOutlet weak var AlertView: UIView!
     @IBOutlet var KyuntoButton: animationButton!
 
+    //キュントポイント
+    var point : Int = 0
+    @IBOutlet var label : UILabel!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,12 +31,7 @@ class HomeViewController: UIViewController {
 //        KyuntoButton.circleColor = UIColor.green
 //        KyuntoButton.lineColor = UIColor.blue
 //        KyuntoButton.duration = 3.0 // default: 1.0
-        
-        //ボタンを押すとtapped呼び出し
-        
 //        KyuntoButton.addTarget(self, action: #selector(HomeViewController.tappedButton(_:)), for: .touchUpInside)
-       
-        
         //KyuntoButton.addTarget(self, action: "tappedButton:", for: UIControlEvents.touchDown)
         
         // Do any additional setup after loading the view.
@@ -39,9 +42,8 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    //キュントボタンアニメーション
     @IBAction func touch(_ sender: animationButton) {
-        
         if sender.isSelected {
             //            // deselect
                         sender.deselect()
@@ -49,7 +51,16 @@ class HomeViewController: UIViewController {
             //            // select with animation
                         sender.select()
                     }
+        sender.select()
+        
+        //キュントカウント
+        point = point + 1
+        label.text = "\(point)キュン"
         print("Kyun")
+        
+        
+        //アラート
+        AlertView.isHidden = false
     }
 //    func tappedButton(_ sender : animationButton) {
 //        if sender.isSelected {
