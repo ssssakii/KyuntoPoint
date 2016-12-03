@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020ADE4A12FA271CE433EB98 /* Pods_KyuntoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9871F58A31E92C6C8E9DBD78 /* Pods_KyuntoAppTests.framework */; };
+		0ADB82A1E61B3E39152C6A82 /* Pods_KyuntoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9FA2C72404815C46C3AC5E /* Pods_KyuntoApp.framework */; };
+		581EEA0D1DF2B73A0061F044 /* kyunto_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 581EEA0C1DF2B73A0061F044 /* kyunto_button.png */; };
+		58F6C8F91DF29C3800A1EEE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6C8F81DF29C3800A1EEE8 /* HomeViewController.swift */; };
+		58F6C8FB1DF29C7B00A1EEE8 /* DOFavoriteButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F6C8FA1DF29C7B00A1EEE8 /* DOFavoriteButton.framework */; };
+		58F6C9171DF2B1C300A1EEE8 /* animationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6C9161DF2B1C300A1EEE8 /* animationButton.swift */; };
 		844436631DF29086001DEA32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436621DF29086001DEA32 /* AppDelegate.swift */; };
 		844436651DF29086001DEA32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436641DF29086001DEA32 /* ViewController.swift */; };
 		844436681DF29086001DEA32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844436661DF29086001DEA32 /* Main.storyboard */; };
@@ -14,6 +20,7 @@
 		8444366D1DF29087001DEA32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8444366B1DF29087001DEA32 /* LaunchScreen.storyboard */; };
 		844436781DF29087001DEA32 /* KyuntoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436771DF29087001DEA32 /* KyuntoAppTests.swift */; };
 		844436831DF29087001DEA32 /* KyuntoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436821DF29087001DEA32 /* KyuntoAppUITests.swift */; };
+		E349FB695385886D2030FA36 /* Pods_KyuntoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305EA83F2EBDD5C624F94B7F /* Pods_KyuntoAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16068845E601B292DAB57BD4 /* Pods-KyuntoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KyuntoAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KyuntoAppTests/Pods-KyuntoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		305EA83F2EBDD5C624F94B7F /* Pods_KyuntoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KyuntoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		581EEA0C1DF2B73A0061F044 /* kyunto_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kyunto_button.png; sourceTree = "<group>"; };
+		58F6C8F81DF29C3800A1EEE8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		58F6C8FA1DF29C7B00A1EEE8 /* DOFavoriteButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DOFavoriteButton.framework; path = "Pods/../build/Release-iphoneos/DOFavoriteButton/DOFavoriteButton.framework"; sourceTree = "<group>"; };
+		58F6C9141DF2B0FD00A1EEE8 /* DOFavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DOFavoriteButton.swift; path = ../Kyun/Pods/DOFavoriteButton/DOFavoriteButton/DOFavoriteButton.swift; sourceTree = "<group>"; };
+		58F6C9161DF2B1C300A1EEE8 /* animationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animationButton.swift; sourceTree = "<group>"; };
+		6A9FA2C72404815C46C3AC5E /* Pods_KyuntoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KyuntoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		718C5374010372B2C48781F3 /* Pods-KyuntoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KyuntoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-KyuntoApp/Pods-KyuntoApp.release.xcconfig"; sourceTree = "<group>"; };
 		8444365F1DF29086001DEA32 /* KyuntoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KyuntoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844436621DF29086001DEA32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844436641DF29086001DEA32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +63,11 @@
 		8444367E1DF29087001DEA32 /* KyuntoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KyuntoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844436821DF29087001DEA32 /* KyuntoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KyuntoAppUITests.swift; sourceTree = "<group>"; };
 		844436841DF29087001DEA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9871F58A31E92C6C8E9DBD78 /* Pods_KyuntoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KyuntoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E2651DA3AB1CDC39755201 /* Pods-KyuntoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KyuntoAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KyuntoAppTests/Pods-KyuntoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		E1A6DE7060C8A0B60D5C6DD8 /* Pods-KyuntoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KyuntoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KyuntoApp/Pods-KyuntoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EFBF3AC82DD38C46395E937E /* Pods-KyuntoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KyuntoAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KyuntoAppUITests/Pods-KyuntoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5DB21B17803B33F86E058BF /* Pods-KyuntoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KyuntoAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KyuntoAppUITests/Pods-KyuntoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F6C8FB1DF29C7B00A1EEE8 /* DOFavoriteButton.framework in Frameworks */,
+				0ADB82A1E61B3E39152C6A82 /* Pods_KyuntoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020ADE4A12FA271CE433EB98 /* Pods_KyuntoAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +92,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E349FB695385886D2030FA36 /* Pods_KyuntoAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D1589046D944A1A849D63A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58F6C8FA1DF29C7B00A1EEE8 /* DOFavoriteButton.framework */,
+				6A9FA2C72404815C46C3AC5E /* Pods_KyuntoApp.framework */,
+				9871F58A31E92C6C8E9DBD78 /* Pods_KyuntoAppTests.framework */,
+				305EA83F2EBDD5C624F94B7F /* Pods_KyuntoAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60D50C5750A05F2FBD3EADFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1A6DE7060C8A0B60D5C6DD8 /* Pods-KyuntoApp.debug.xcconfig */,
+				718C5374010372B2C48781F3 /* Pods-KyuntoApp.release.xcconfig */,
+				16068845E601B292DAB57BD4 /* Pods-KyuntoAppTests.debug.xcconfig */,
+				B5E2651DA3AB1CDC39755201 /* Pods-KyuntoAppTests.release.xcconfig */,
+				EFBF3AC82DD38C46395E937E /* Pods-KyuntoAppUITests.debug.xcconfig */,
+				F5DB21B17803B33F86E058BF /* Pods-KyuntoAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		844436561DF29086001DEA32 = {
 			isa = PBXGroup;
 			children = (
+				58F6C9141DF2B0FD00A1EEE8 /* DOFavoriteButton.swift */,
 				844436611DF29086001DEA32 /* KyuntoApp */,
 				844436761DF29087001DEA32 /* KyuntoAppTests */,
 				844436811DF29087001DEA32 /* KyuntoAppUITests */,
 				844436601DF29086001DEA32 /* Products */,
+				60D50C5750A05F2FBD3EADFD /* Pods */,
+				2D1589046D944A1A849D63A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +155,9 @@
 				844436691DF29087001DEA32 /* Assets.xcassets */,
 				8444366B1DF29087001DEA32 /* LaunchScreen.storyboard */,
 				8444366E1DF29087001DEA32 /* Info.plist */,
+				58F6C8F81DF29C3800A1EEE8 /* HomeViewController.swift */,
+				58F6C9161DF2B1C300A1EEE8 /* animationButton.swift */,
+				581EEA0C1DF2B73A0061F044 /* kyunto_button.png */,
 			);
 			path = KyuntoApp;
 			sourceTree = "<group>";
@@ -132,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 844436871DF29087001DEA32 /* Build configuration list for PBXNativeTarget "KyuntoApp" */;
 			buildPhases = (
+				DD05CEE4E09AE4954628187F /* [CP] Check Pods Manifest.lock */,
 				8444365B1DF29086001DEA32 /* Sources */,
 				8444365C1DF29086001DEA32 /* Frameworks */,
 				8444365D1DF29086001DEA32 /* Resources */,
+				6698C6122594E75E3B36EC43 /* [CP] Embed Pods Frameworks */,
+				07BFD810C8833F1FF82C75B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8444368A1DF29087001DEA32 /* Build configuration list for PBXNativeTarget "KyuntoAppTests" */;
 			buildPhases = (
+				AFA8F3657600CD2A58B580A1 /* [CP] Check Pods Manifest.lock */,
 				8444366F1DF29087001DEA32 /* Sources */,
 				844436701DF29087001DEA32 /* Frameworks */,
 				844436711DF29087001DEA32 /* Resources */,
+				50605D3233146292F539440A /* [CP] Embed Pods Frameworks */,
+				0638FF513D19BD772F0A9425 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8444368D1DF29087001DEA32 /* Build configuration list for PBXNativeTarget "KyuntoAppUITests" */;
 			buildPhases = (
+				B35E27E53783BED415892495 /* [CP] Check Pods Manifest.lock */,
 				8444367A1DF29087001DEA32 /* Sources */,
 				8444367B1DF29087001DEA32 /* Frameworks */,
 				8444367C1DF29087001DEA32 /* Resources */,
+				717BC3C4A2C95D67E6886773 /* [CP] Embed Pods Frameworks */,
+				B288C62780066487F19DA2A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,7 +257,7 @@
 				TargetAttributes = {
 					8444365E1DF29086001DEA32 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = QXTM62538V;
+						DevelopmentTeam = UZZ5WC8E2Y;
 						ProvisioningStyle = Automatic;
 					};
 					844436721DF29087001DEA32 = {
@@ -236,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8444366D1DF29087001DEA32 /* LaunchScreen.storyboard in Resources */,
+				581EEA0D1DF2B73A0061F044 /* kyunto_button.png in Resources */,
 				8444366A1DF29087001DEA32 /* Assets.xcassets in Resources */,
 				844436681DF29086001DEA32 /* Main.storyboard in Resources */,
 			);
@@ -257,13 +322,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0638FF513D19BD772F0A9425 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KyuntoAppTests/Pods-KyuntoAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		07BFD810C8833F1FF82C75B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KyuntoApp/Pods-KyuntoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50605D3233146292F539440A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KyuntoAppTests/Pods-KyuntoAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6698C6122594E75E3B36EC43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KyuntoApp/Pods-KyuntoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		717BC3C4A2C95D67E6886773 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KyuntoAppUITests/Pods-KyuntoAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFA8F3657600CD2A58B580A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B288C62780066487F19DA2A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KyuntoAppUITests/Pods-KyuntoAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B35E27E53783BED415892495 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD05CEE4E09AE4954628187F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8444365B1DF29086001DEA32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				844436651DF29086001DEA32 /* ViewController.swift in Sources */,
+				58F6C9171DF2B1C300A1EEE8 /* animationButton.swift in Sources */,
 				844436631DF29086001DEA32 /* AppDelegate.swift in Sources */,
+				58F6C8F91DF29C3800A1EEE8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,10 +616,16 @@
 		};
 		844436881DF29087001DEA32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1A6DE7060C8A0B60D5C6DD8 /* Pods-KyuntoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QXTM62538V;
+				DEVELOPMENT_TEAM = UZZ5WC8E2Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/DOFavoriteButton",
+				);
 				INFOPLIST_FILE = KyuntoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sakincho.KyuntoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,10 +635,16 @@
 		};
 		844436891DF29087001DEA32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 718C5374010372B2C48781F3 /* Pods-KyuntoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QXTM62538V;
+				DEVELOPMENT_TEAM = UZZ5WC8E2Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/DOFavoriteButton",
+				);
 				INFOPLIST_FILE = KyuntoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sakincho.KyuntoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,11 +654,13 @@
 		};
 		8444368B1DF29087001DEA32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16068845E601B292DAB57BD4 /* Pods-KyuntoAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = QXTM62538V;
 				INFOPLIST_FILE = KyuntoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sakincho.KyuntoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,11 +671,13 @@
 		};
 		8444368C1DF29087001DEA32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E2651DA3AB1CDC39755201 /* Pods-KyuntoAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = QXTM62538V;
 				INFOPLIST_FILE = KyuntoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sakincho.KyuntoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -467,10 +688,12 @@
 		};
 		8444368E1DF29087001DEA32 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFBF3AC82DD38C46395E937E /* Pods-KyuntoAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QXTM62538V;
 				INFOPLIST_FILE = KyuntoAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sakincho.KyuntoAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,10 +704,12 @@
 		};
 		8444368F1DF29087001DEA32 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5DB21B17803B33F86E058BF /* Pods-KyuntoAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QXTM62538V;
 				INFOPLIST_FILE = KyuntoAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sakincho.KyuntoAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,6 +737,7 @@
 				844436891DF29087001DEA32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8444368A1DF29087001DEA32 /* Build configuration list for PBXNativeTarget "KyuntoAppTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +746,7 @@
 				8444368C1DF29087001DEA32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8444368D1DF29087001DEA32 /* Build configuration list for PBXNativeTarget "KyuntoAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +755,7 @@
 				8444368F1DF29087001DEA32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
