@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import Social
 
 class addViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet var addMemoTextView: UITextView!
     var memoArray: [String] = []
     let saveData: UserDefaults = UserDefaults.standard
+    
+    //Twitter投稿するかどうか
+    var twitterOn: Bool = false
+    @IBOutlet weak var twitterSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +42,11 @@ class addViewController: UIViewController, UITextViewDelegate {
         
         print(saveData.object(forKey: "MEMO"))
         
+        /******Twitter投稿するかどうか****/
+        if twitterOn {
+            self.toTwitter()
+        }
+        
         //memoViewControllerに遷移の3行
         print("画面遷移しマーーーーーーース")
         let storyboard: UIStoryboard = self.storyboard!
@@ -44,11 +54,27 @@ class addViewController: UIViewController, UITextViewDelegate {
         self.present(nextView, animated: true, completion: nil)
     }
 
-    //***** 改行ボタンを押した時の処理 *******/
+    /***** 改行ボタンを押した時の処理 *******/
     func textFieldShouldReturn(_ addMemoTextView: UITextView) -> Bool {
         // キーボードを隠す
         addMemoTextView.resignFirstResponder()
         return true
     }
-
+    
+    /****** Twitterスイッチ *********/
+    @IBAction func TwitterChanged(_ sender: UISwitch) {
+        if twitterSwitch.isOn {
+            twitterOn = true
+        }
+    }
+    
+    /****** Twitter投稿 *********/
+    func toTwitter() {
+        // Twitterダイアログを作る
+        let cv = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        // 文字追加
+        //cv?.setInitialText("テスト: 今日はポイント" + (Stirng)(point) + "貯めました")
+        // 投稿ダイアログを表示する
+        self.present(cv!, animated: true, completion: nil)
+    }
 }
