@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D29DEDA1DF470CD00326C20 /* memoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D29DED81DF470CD00326C20 /* memoTableViewCell.swift */; };
+		2D29DEDB1DF470CD00326C20 /* memoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D29DED91DF470CD00326C20 /* memoTableViewCell.xib */; };
 		844436631DF29086001DEA32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436621DF29086001DEA32 /* AppDelegate.swift */; };
 		844436651DF29086001DEA32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436641DF29086001DEA32 /* ViewController.swift */; };
 		844436681DF29086001DEA32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844436661DF29086001DEA32 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D29DED81DF470CD00326C20 /* memoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = memoTableViewCell.swift; sourceTree = "<group>"; };
+		2D29DED91DF470CD00326C20 /* memoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = memoTableViewCell.xib; sourceTree = "<group>"; };
 		8444365F1DF29086001DEA32 /* KyuntoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KyuntoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844436621DF29086001DEA32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844436641DF29086001DEA32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 			children = (
 				844436951DF29CB8001DEA32 /* memoViewController.swift */,
 				844436971DF29EE8001DEA32 /* addViewController.swift */,
+				2D29DED81DF470CD00326C20 /* memoTableViewCell.swift */,
+				2D29DED91DF470CD00326C20 /* memoTableViewCell.xib */,
 			);
 			path = TableViewController;
 			sourceTree = "<group>";
@@ -207,7 +213,7 @@
 				TargetAttributes = {
 					8444365E1DF29086001DEA32 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = QXTM62538V;
+						DevelopmentTeam = 2263GD5RWN;
 						ProvisioningStyle = Automatic;
 					};
 					844436721DF29087001DEA32 = {
@@ -252,6 +258,7 @@
 				8444366D1DF29087001DEA32 /* LaunchScreen.storyboard in Resources */,
 				8444366A1DF29087001DEA32 /* Assets.xcassets in Resources */,
 				844436681DF29086001DEA32 /* Main.storyboard in Resources */,
+				2D29DEDB1DF470CD00326C20 /* memoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +286,7 @@
 				844436651DF29086001DEA32 /* ViewController.swift in Sources */,
 				844436961DF29CB8001DEA32 /* memoViewController.swift in Sources */,
 				844436981DF29EE8001DEA32 /* addViewController.swift in Sources */,
+				2D29DEDA1DF470CD00326C20 /* memoTableViewCell.swift in Sources */,
 				844436631DF29086001DEA32 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,10 +437,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QXTM62538V;
+				DEVELOPMENT_TEAM = 2263GD5RWN;
 				INFOPLIST_FILE = KyuntoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sakincho.KyuntoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nozomeal.KyuntoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -442,10 +451,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QXTM62538V;
+				DEVELOPMENT_TEAM = 2263GD5RWN;
 				INFOPLIST_FILE = KyuntoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sakincho.KyuntoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nozomeal.KyuntoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

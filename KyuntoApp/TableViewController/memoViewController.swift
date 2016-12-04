@@ -11,17 +11,31 @@ import UIKit
 class memoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var table: UITableView!
-    var memoArray: [String] = []
-    let saveData: UserDefaults = UserDefaults.standard
+    var memoArray: [Dictionary<String,String>] = []
+    var dateArray: [String] = []
+    //var placeArray: [String] = []
+    let saveMemoData: UserDefaults = UserDefaults.standard
+    //let savePlaceData: UserDefaults = UserDefaults.standard
+    let saveDateData: UserDefaults = UserDefaults.standard
+    
+   var dateIndex=0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //memotableView.xibとの連携のnib
+        var nib = UINib(nibName: "memoTableViewCell", bundle: nil)
+        table.register(nib, forCellReuseIdentifier: "cell")
+                
         print("_______memoViewController________")
 
         //データ読み込み
-        memoArray = (saveData.object(forKey: "MEMO") as! [String]?)!
+        memoArray = (saveMemoData.object(forKey: "MEMO") as! [Dictionary<String,String>]?)!
+        //placeArray = (savePlaceData.object(forKey: "PLACE") as! [String]?)!
+        dateArray = (saveDateData.object(forKey: "DATE") as! [String]?)!
+        
+        
         NSLog("2 memoArray: %@", String(describing: memoArray))
+        NSLog("2 dateArray: %@", String(describing: dateArray))
         
     }
 
@@ -34,9 +48,17 @@ class memoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewWillAppear(animated)
         
         //配列memoArrayにデータを入れる
-        if saveData.array(forKey: "MEMO") != nil {
-            memoArray = saveData.array(forKey: "MEMO") as! [String]
+        if saveMemoData.array(forKey: "MEMO") != nil {
+            memoArray = saveMemoData.array(forKey: "MEMO") as! [Dictionary<String,String>]
         }
+        if saveDateData.array(forKey: "DATE") != nil {
+            dateArray = saveDateData.array(forKey: "DATE") as! [String]
+        }
+        /*if savePlaceData.array(forKey: "PLACE") != nil {
+            placeArray = savePlaceData.array(forKey: "PLACE") as! [String]
+        }
+        */
+        table.reloadData()
     }
 
     
@@ -53,12 +75,15 @@ class memoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         print("セルの中身を設定")
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell!
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! memoTableViewCell
+        let nowIndexPathDictionary = memoArray[indexPath.row]
         //Tag番号1で UILabelインスタンスを生成
-        _ = table.viewWithTag(1) as! UILabel // textLabel
+        //_ = table.viewWithTag(1) as! UILabel // textLabel
         //cell上のtextLabelに、配列memoArrayの中身を表示
-        cell?.textLabel?.text = memoArray[indexPath.row]
-        return cell!
+        //cell?.textLabel?.text = memoArray[indexPath.row]
+        cell.memoLabel.text = nowIndexPathDictionary["memo"]
+        //cell.dateLabel.text = dateArray[0]
+        cell.placeLabel.text = nowIndexPathDictionary["place"]
+        return cell
     }
 }
