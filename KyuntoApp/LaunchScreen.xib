@@ -15,12 +15,19 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Urd-ey-3Ki">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Urd-ey-3Ki">
                     <rect key="frame" x="210" y="210" width="60" height="60"/>
-                    <autoresizingMask key="autoresizingMask"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="e4t-EF-XCN"/>
+                        <constraint firstAttribute="width" constant="60" id="fNs-w7-SS2"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="0.62712012090000002" blue="0.53198525299999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Urd-ey-3Ki" firstAttribute="centerY" secondItem="W1B-Yq-FaC" secondAttribute="centerY" id="ysC-S3-CT1"/>
+                <constraint firstItem="Urd-ey-3Ki" firstAttribute="centerX" secondItem="W1B-Yq-FaC" secondAttribute="centerX" id="zxI-cF-SS1"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="1430" y="64"/>

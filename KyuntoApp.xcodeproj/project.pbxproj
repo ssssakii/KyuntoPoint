@@ -196,7 +196,7 @@
 				TargetAttributes = {
 					8444365E1DF29086001DEA32 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = QXTM62538V;
+						DevelopmentTeam = 65MP746LQ6;
 						ProvisioningStyle = Automatic;
 					};
 					844436721DF29087001DEA32 = {
@@ -409,7 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QXTM62538V;
+				DEVELOPMENT_TEAM = 65MP746LQ6;
 				INFOPLIST_FILE = KyuntoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sakincho.KyuntoApp;
@@ -422,7 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QXTM62538V;
+				DEVELOPMENT_TEAM = 65MP746LQ6;
 				INFOPLIST_FILE = KyuntoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sakincho.KyuntoApp;
