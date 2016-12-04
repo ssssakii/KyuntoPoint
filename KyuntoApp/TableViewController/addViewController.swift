@@ -16,7 +16,7 @@ class addViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //デリゲート
         addMemoTextView.delegate = self
     }
 
@@ -27,7 +27,6 @@ class addViewController: UIViewController, UITextViewDelegate {
     
     @IBAction func saveMemo() {
         print("PUSH save")
-        //print(addMemoTextView.text)
         //配列に保存
         memoArray.append(addMemoTextView.text)
         NSLog("memoArray: %@", String(describing: memoArray))
@@ -35,10 +34,11 @@ class addViewController: UIViewController, UITextViewDelegate {
         saveData.set(memoArray, forKey: "MEMO")
         //この時点で一旦保存
         saveData.synchronize()
+        
         print(saveData.object(forKey: "MEMO"))
         
-        //memoViewControllerに遷移
-        print("今から遷移しマーーーーーーース")
+        //memoViewControllerに遷移の3行
+        print("画面遷移しマーーーーーーース")
         let storyboard: UIStoryboard = self.storyboard!
         let nextView = storyboard.instantiateViewController(withIdentifier: "tomemoViewController") as! memoViewController
         self.present(nextView, animated: true, completion: nil)
@@ -46,7 +46,6 @@ class addViewController: UIViewController, UITextViewDelegate {
 
     //***** 改行ボタンを押した時の処理 *******/
     func textFieldShouldReturn(_ addMemoTextView: UITextView) -> Bool {
-        
         // キーボードを隠す
         addMemoTextView.resignFirstResponder()
         return true
