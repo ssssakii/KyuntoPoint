@@ -21,12 +21,9 @@ class addViewController: UIViewController, UITextViewDelegate {
     let saveMemoData: UserDefaults = UserDefaults.standard
     //dateのuserdefaults
     let saveDateData: UserDefaults = UserDefaults.standard
-    /*
-    //placeのuserdefaluts
-    let savePlaceData: UserDefaults = UserDefaults.standard*/
-
+    let saveIndexData: UserDefaults = UserDefaults.standard
    
-    
+    var indexDate = 0
     
     //Twitter投稿するかどうか
     var twitterOn: Bool = false
@@ -34,21 +31,25 @@ class addViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if saveMemoData.array(forKey: "MEMO") != nil{
+        /*if saveMemoData.array(forKey: "MEMO") != nil{
             memoArray = saveMemoData.array(forKey: "MEMO") as![Dictionary<String,String>]
             
-        }
+        }*/
         
         //日付
         let date = NSDate()
         let format = DateFormatter()
-        format.dateFormat = "yyyy-MM-dd"
+        format.dateFormat = "yyyy/MM/dd"
         let strDate = format.string(from: date as Date)
         dateLabel.text = strDate
         
-        saveDateData.set(dateArray, forKey: "DATE")
+         dateArray.append(strDate)
         
+        
+        saveDateData.set(dateArray, forKey: "DATE")
         saveDateData.synchronize()
+        
+        
  
         //デリゲート
         addMemoTextView.delegate = self
@@ -66,6 +67,13 @@ class addViewController: UIViewController, UITextViewDelegate {
         
         //配列に保存
         //memoArray.append(addMemoTextView.text)
+        
+        //付け足した
+        /*if saveMemoData.array(forKey: "MEMO") != nil{
+            memoArray = saveMemoData.array(forKey: "MEMO") as![Dictionary<String,String>]
+            
+        }*/
+        
         memoArray.append(memoDictionary)
         NSLog("memoArray: %@", String(describing: memoArray))
         //UserDefaultsに保存

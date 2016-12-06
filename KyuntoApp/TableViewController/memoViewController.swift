@@ -17,6 +17,7 @@ class memoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     let saveMemoData: UserDefaults = UserDefaults.standard
     //let savePlaceData: UserDefaults = UserDefaults.standard
     let saveDateData: UserDefaults = UserDefaults.standard
+    let saveIndexData: UserDefaults = UserDefaults.standard
     
    var dateIndex=0
 
@@ -32,7 +33,7 @@ class memoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         memoArray = (saveMemoData.object(forKey: "MEMO") as! [Dictionary<String,String>]?)!
         //placeArray = (savePlaceData.object(forKey: "PLACE") as! [String]?)!
         dateArray = (saveDateData.object(forKey: "DATE") as! [String]?)!
-        
+        //dateIndex = (saveIndexData.object(forKey: "INDEX") as! Int)
         
         NSLog("2 memoArray: %@", String(describing: memoArray))
         NSLog("2 dateArray: %@", String(describing: dateArray))
@@ -82,7 +83,7 @@ class memoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         //cell上のtextLabelに、配列memoArrayの中身を表示
         //cell?.textLabel?.text = memoArray[indexPath.row]
         cell.memoLabel.text = nowIndexPathDictionary["memo"]
-        //cell.dateLabel.text = dateArray[0]
+        cell.dateLabel.text = dateArray[indexPath.row]
         cell.placeLabel.text = nowIndexPathDictionary["place"]
         return cell
     }
