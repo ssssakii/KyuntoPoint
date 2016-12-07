@@ -16,7 +16,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //復帰したかどうか
+        if let notification = launchOptions?[UIApplicationLaunchOptionsKey.localNotification] as? UILocalNotification,let userInfo = notification.userInfo{
+            application.applicationIconBadgeNumber = 0
+            application.cancelLocalNotification(notification)
+        }
+        //復帰に関係なくバッジが0じゃなければ0にする
+        if application.applicationIconBadgeNumber != 0{
+            application.applicationIconBadgeNumber = 0
+        }
+        //ユーザーに通知許可をもらうためのコード
+        if #available(iOS 8.0, *) {
+            // iOS8以上
+            //forTypesは.Alertと.Soundと.Badgeがあります。
+            let notiSettings = UIUserNotificationSettings(types:[.alert,.sound,.badge], categories:nil)
+            application.registerUserNotificationSettings(notiSettings)
+            application.registerForRemoteNotifications()
+            
+        } else{
+            // iOS7以前
+            application.registerForRemoteNotifications( matching: [.alert,.sound,.badge] )
+        }
+        
         return true
+    }
+    
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        //アプリがactive時に通知を発生させた時にも呼ばれる
+        if application.applicationState != .active{
+            //バッジを０にする
+            application.applicationIconBadgeNumber = 0
+            //通知領域から削除する
+            application.cancelLocalNotification(notification)
+        }else{
+            //active時に通知が来たときはそのままバッジを0に戻す
+            if application.applicationIconBadgeNumber != 0{
+                application.applicationIconBadgeNumber = 0
+                application.cancelLocalNotification(notification)
+            }
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -25,12 +64,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        //古い通知があれば削除する
+        application.cancelAllLocalNotifications()
+        //ローカル通知
+        let notification = UILocalNotification()
+        //ロック中にスライドで〜〜のところの文字
+        notification.alertAction = "アプリを開く"
+        //通知の本文
+        notification.alertBody = "今日もキュントポイントがたまりました！！"
+        //通知される時間（とりあえず10秒後に設定）
+        notification.fireDate = NSDate(timeIntervalSinceNow:10) as Date
+        //notification.fireDate = NextWeek.EveryDay()
+        //通知音
+        notification.soundName = UILocalNotificationDefaultSoundName
+        //アインコンバッジの数字
+        notification.applicationIconBadgeNumber = 1
+        //通知を識別するID
+        notification.userInfo = ["notifyID":"kyunto"]
+        //通知をスケジューリング
+        application.scheduleLocalNotification(notification)
+        
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        print("バックグラウンドからフォアグラウウンド")
+        if application.applicationIconBadgeNumber != 0{
+            application.applicationIconBadgeNumber = 0
+            print("application\(application.applicationIconBadgeNumber)")
+        }
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {

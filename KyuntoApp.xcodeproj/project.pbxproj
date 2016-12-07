@@ -16,6 +16,9 @@
 		844436831DF29087001DEA32 /* KyuntoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436821DF29087001DEA32 /* KyuntoAppUITests.swift */; };
 		844436961DF29CB8001DEA32 /* memoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436951DF29CB8001DEA32 /* memoViewController.swift */; };
 		844436981DF29EE8001DEA32 /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436971DF29EE8001DEA32 /* addViewController.swift */; };
+		8476E68D1DF81680008A620D /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476E68C1DF81680008A620D /* PushViewController.swift */; };
+		8476E6911DF82A4B008A620D /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476E6901DF82A4B008A620D /* Week.swift */; };
+		8476E6931DF82A81008A620D /* EveryDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476E6921DF82A81008A620D /* EveryDay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		844436841DF29087001DEA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844436951DF29CB8001DEA32 /* memoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = memoViewController.swift; sourceTree = "<group>"; };
 		844436971DF29EE8001DEA32 /* addViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
+		8476E68C1DF81680008A620D /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		8476E6901DF82A4B008A620D /* Week.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Week.swift; path = ../Week.swift; sourceTree = "<group>"; };
+		8476E6921DF82A81008A620D /* EveryDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EveryDay.swift; path = KyuntoApp/EveryDay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		844436561DF29086001DEA32 = {
 			isa = PBXGroup;
 			children = (
+				8476E6921DF82A81008A620D /* EveryDay.swift */,
 				844436611DF29086001DEA32 /* KyuntoApp */,
 				844436761DF29087001DEA32 /* KyuntoAppTests */,
 				844436811DF29087001DEA32 /* KyuntoAppUITests */,
@@ -101,8 +108,10 @@
 		844436611DF29086001DEA32 /* KyuntoApp */ = {
 			isa = PBXGroup;
 			children = (
+				8476E6901DF82A4B008A620D /* Week.swift */,
 				844436621DF29086001DEA32 /* AppDelegate.swift */,
 				844436641DF29086001DEA32 /* ViewController.swift */,
+				8476E68C1DF81680008A620D /* PushViewController.swift */,
 				844436921DF29C59001DEA32 /* TableViewController */,
 				844436661DF29086001DEA32 /* Main.storyboard */,
 				844436691DF29087001DEA32 /* Assets.xcassets */,
@@ -278,8 +287,11 @@
 			files = (
 				844436651DF29086001DEA32 /* ViewController.swift in Sources */,
 				844436961DF29CB8001DEA32 /* memoViewController.swift in Sources */,
+				8476E6931DF82A81008A620D /* EveryDay.swift in Sources */,
 				844436981DF29EE8001DEA32 /* addViewController.swift in Sources */,
+				8476E68D1DF81680008A620D /* PushViewController.swift in Sources */,
 				844436631DF29086001DEA32 /* AppDelegate.swift in Sources */,
+				8476E6911DF82A4B008A620D /* Week.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QXTM62538V;
 				INFOPLIST_FILE = KyuntoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sakincho.KyuntoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +457,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QXTM62538V;
 				INFOPLIST_FILE = KyuntoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sakincho.KyuntoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
