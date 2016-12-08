@@ -56,6 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 application.cancelLocalNotification(notification)
             }
         }
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -74,15 +75,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         notification.alertBody = "今日もキュントポイントがたまりました！！"
         //通知される時間（とりあえず10秒後に設定）
         notification.fireDate = NSDate(timeIntervalSinceNow:10) as Date
-        //notification.fireDate = NextWeek.EveryDay()
+        //notification.fireDate = EveryDay.EveryDayPush()
         //通知音
         notification.soundName = UILocalNotificationDefaultSoundName
         //アインコンバッジの数字
-        notification.applicationIconBadgeNumber = 1
+        notification.applicationIconBadgeNumber = notification.applicationIconBadgeNumber + 1
         //通知を識別するID
         notification.userInfo = ["notifyID":"kyunto"]
         //通知をスケジューリング
         application.scheduleLocalNotification(notification)
+        //毎日繰り返す
+        notification.repeatInterval = .day
         
     }
 

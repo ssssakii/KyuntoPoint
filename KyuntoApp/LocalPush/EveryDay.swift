@@ -9,15 +9,22 @@
 import Foundation
 
 class EveryDay {
-/*
-    class func EveryDay() -> NSDate{
+
+    class func EveryDayPush() {
        
         //現在の日時を取得する
         let date = NSDate()
         let calender = NSCalendar.current
-        let components = calender.dateComponents([.year, .month, .day, .hour, .minute], from: date as Date)
+        var components = calender.dateComponents([.year, .month, .day, .hour, .minute], from: date as Date)
         let hour = components.hour
         print(hour)
+        
+        //ここから追加
+        if date.compare(components.date!) != .orderedAscending {
+            components.day = components.day! + 1
+        }
+        
+        /*
         //通知する曜日を指定
         let interval: TimeInterval
         //現在の日時から次の日を算出
@@ -38,6 +45,7 @@ class EveryDay {
         fireDateComponents.second = 0
         
         //return calender.dateComponents(fireDateComponents)!
-    }
  */
+    }
+
 }
