@@ -60,8 +60,30 @@ class HomeViewController: UIViewController {
         
         
         //アラート
-        AlertView.isHidden = false
+//            AlertView.isHidden = false
+        UIView.animateWithDuration(2.0,
+                                   
+        // 遅延時間.
+            delay: 0.0,
+            
+        // バネの弾性力. 小さいほど弾性力は大きくなる.
+            usingSpringWithDamping: 0.2,
+            
+        // 初速度.
+            initialSpringVelocity: 1.5,
+            
+        // 一定の速度.
+//            options: UIViewAnimationOptions.CurveLinear,
+//            
+//            animations: { () -> Void in
+//                
+//                self.label.position = CGPointMake(self.view.frame.width-50, 100)
+//                
+                // アニメーション完了時の処理
+        })
+        
     }
+    
 //    func tappedButton(_ sender : animationButton) {
 //        if sender.isSelected {
 //            // deselect

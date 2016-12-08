@@ -61,10 +61,10 @@
                                         <color key="value" red="1" green="0.84350801410645626" blue="0.049220524118718689" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
-                                        <color key="value" red="1" green="0.78530905149999997" blue="0.072342772279999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.78431372549019607" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                        <color key="value" red="0.9528245192" green="0.4380898755" blue="0.45854997260000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.95294117647058818" green="0.4392156862745098" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                         <real key="value" value="1"/>
