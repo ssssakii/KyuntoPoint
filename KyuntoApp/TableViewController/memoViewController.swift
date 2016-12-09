@@ -8,7 +8,12 @@
 
 import UIKit
 
+
+
+
 class memoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    //var font:UIFont = UIFont(name:"HelveticaNeue-Bold",size:10)
     
     @IBOutlet var table: UITableView!
     var memoArray: [Dictionary<String,String>] = []
@@ -29,14 +34,14 @@ class memoViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 
         print("_______memoViewController________")
 
-        //データ読み込み
-        memoArray = (saveMemoData.object(forKey: "MEMO") as! [Dictionary<String,String>]?)!
+        //データを配列に入れる
+       // memoArray = (saveMemoData.object(forKey: "MEMO") as! [Dictionary<String,String>]?)!
         //placeArray = (savePlaceData.object(forKey: "PLACE") as! [String]?)!
-        dateArray = (saveDateData.object(forKey: "DATE") as! [String]?)!
+        //dateArray = (saveDateData.object(forKey: "DATE") as! [String]?)!
         //dateIndex = (saveIndexData.object(forKey: "INDEX") as! Int)
         
-        NSLog("2 memoArray: %@", String(describing: memoArray))
-        NSLog("2 dateArray: %@", String(describing: dateArray))
+        //NSLog("2 memoArray: %@", String(describing: memoArray))
+        //NSLog("2 dateArray: %@", String(describing: dateArray))
         
     }
 
@@ -51,6 +56,7 @@ class memoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         //配列memoArrayにデータを入れる
         if saveMemoData.array(forKey: "MEMO") != nil {
             memoArray = saveMemoData.array(forKey: "MEMO") as! [Dictionary<String,String>]
+            print(memoArray[0])
         }
         if saveDateData.array(forKey: "DATE") != nil {
             dateArray = saveDateData.array(forKey: "DATE") as! [String]

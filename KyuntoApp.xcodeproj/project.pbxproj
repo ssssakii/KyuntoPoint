@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D090FF31DFA9E76008A8A79 /* animationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D090FF21DFA9E76008A8A79 /* animationButton.swift */; };
+		2D090FF51DFA9EE1008A8A79 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D090FF41DFA9EE1008A8A79 /* HomeViewController.swift */; };
+		2D090FFA1DFAA4F1008A8A79 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D090FF91DFAA4F0008A8A79 /* logo.png */; };
+		2D090FFE1DFAA680008A8A79 /* LaunchsScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D090FFD1DFAA680008A8A79 /* LaunchsScreen.xib */; };
+		2D0910001DFAC334008A8A79 /* Boku2-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D090FFF1DFAC334008A8A79 /* Boku2-Bold.otf */; };
+		2D09100D1DFAC3EF008A8A79 /* heart_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910021DFAC3EF008A8A79 /* heart_tab.png */; };
+		2D09100E1DFAC3EF008A8A79 /* heart_tab@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910031DFAC3EF008A8A79 /* heart_tab@2x.png.png */; };
+		2D09100F1DFAC3EF008A8A79 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910041DFAC3EF008A8A79 /* icon.png */; };
+		2D0910101DFAC3EF008A8A79 /* icon@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910051DFAC3EF008A8A79 /* icon@2x.png.png */; };
+		2D0910111DFAC3EF008A8A79 /* note_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910061DFAC3EF008A8A79 /* note_tab.png */; };
+		2D0910121DFAC3EF008A8A79 /* note_tab@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910071DFAC3EF008A8A79 /* note_tab@2x.png.png */; };
+		2D0910131DFAC3EF008A8A79 /* Pin_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910081DFAC3EF008A8A79 /* Pin_icon.png */; };
+		2D0910141DFAC3EF008A8A79 /* PoinGetView.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910091DFAC3EF008A8A79 /* PoinGetView.png */; };
+		2D0910151DFAC3EF008A8A79 /* PoinGetView@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D09100A1DFAC3EF008A8A79 /* PoinGetView@2x.png.png */; };
+		2D0910161DFAC3EF008A8A79 /* twitter_logo_yellow01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D09100B1DFAC3EF008A8A79 /* twitter_logo_yellow01.png */; };
+		2D0910171DFAC3EF008A8A79 /* twitter_logo_yellow01@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D09100C1DFAC3EF008A8A79 /* twitter_logo_yellow01@2x.png.png */; };
+		2D0910191DFAD931008A8A79 /* kyunto_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910181DFAD931008A8A79 /* kyunto_button.png */; };
 		2D29DEDA1DF470CD00326C20 /* memoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D29DED81DF470CD00326C20 /* memoTableViewCell.swift */; };
 		2D29DEDB1DF470CD00326C20 /* memoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D29DED91DF470CD00326C20 /* memoTableViewCell.xib */; };
 		844436631DF29086001DEA32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436621DF29086001DEA32 /* AppDelegate.swift */; };
@@ -38,6 +55,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D090FF21DFA9E76008A8A79 /* animationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animationButton.swift; sourceTree = "<group>"; };
+		2D090FF41DFA9EE1008A8A79 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2D090FF91DFAA4F0008A8A79 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		2D090FFD1DFAA680008A8A79 /* LaunchsScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchsScreen.xib; sourceTree = "<group>"; };
+		2D090FFF1DFAC334008A8A79 /* Boku2-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Boku2-Bold.otf"; sourceTree = "<group>"; };
+		2D0910021DFAC3EF008A8A79 /* heart_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_tab.png; sourceTree = "<group>"; };
+		2D0910031DFAC3EF008A8A79 /* heart_tab@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart_tab@2x.png.png"; sourceTree = "<group>"; };
+		2D0910041DFAC3EF008A8A79 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		2D0910051DFAC3EF008A8A79 /* icon@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png.png"; sourceTree = "<group>"; };
+		2D0910061DFAC3EF008A8A79 /* note_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note_tab.png; sourceTree = "<group>"; };
+		2D0910071DFAC3EF008A8A79 /* note_tab@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "note_tab@2x.png.png"; sourceTree = "<group>"; };
+		2D0910081DFAC3EF008A8A79 /* Pin_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pin_icon.png; sourceTree = "<group>"; };
+		2D0910091DFAC3EF008A8A79 /* PoinGetView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PoinGetView.png; sourceTree = "<group>"; };
+		2D09100A1DFAC3EF008A8A79 /* PoinGetView@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PoinGetView@2x.png.png"; sourceTree = "<group>"; };
+		2D09100B1DFAC3EF008A8A79 /* twitter_logo_yellow01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_logo_yellow01.png; sourceTree = "<group>"; };
+		2D09100C1DFAC3EF008A8A79 /* twitter_logo_yellow01@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter_logo_yellow01@2x.png.png"; sourceTree = "<group>"; };
+		2D0910181DFAD931008A8A79 /* kyunto_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kyunto_button.png; sourceTree = "<group>"; };
 		2D29DED81DF470CD00326C20 /* memoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = memoTableViewCell.swift; sourceTree = "<group>"; };
 		2D29DED91DF470CD00326C20 /* memoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = memoTableViewCell.xib; sourceTree = "<group>"; };
 		8444365F1DF29086001DEA32 /* KyuntoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KyuntoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +116,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D090FF61DFAA0AF008A8A79 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D090FF41DFA9EE1008A8A79 /* HomeViewController.swift */,
+				2D090FF21DFA9E76008A8A79 /* animationButton.swift */,
+			);
+			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		2D0910011DFAC3EF008A8A79 /* KyuntoResources */ = {
+			isa = PBXGroup;
+			children = (
+				2D0910181DFAD931008A8A79 /* kyunto_button.png */,
+				2D0910021DFAC3EF008A8A79 /* heart_tab.png */,
+				2D0910031DFAC3EF008A8A79 /* heart_tab@2x.png.png */,
+				2D0910041DFAC3EF008A8A79 /* icon.png */,
+				2D0910051DFAC3EF008A8A79 /* icon@2x.png.png */,
+				2D0910061DFAC3EF008A8A79 /* note_tab.png */,
+				2D0910071DFAC3EF008A8A79 /* note_tab@2x.png.png */,
+				2D0910081DFAC3EF008A8A79 /* Pin_icon.png */,
+				2D0910091DFAC3EF008A8A79 /* PoinGetView.png */,
+				2D09100A1DFAC3EF008A8A79 /* PoinGetView@2x.png.png */,
+				2D09100B1DFAC3EF008A8A79 /* twitter_logo_yellow01.png */,
+				2D09100C1DFAC3EF008A8A79 /* twitter_logo_yellow01@2x.png.png */,
+			);
+			path = KyuntoResources;
+			sourceTree = "<group>";
+		};
 		844436561DF29086001DEA32 = {
 			isa = PBXGroup;
 			children = (
@@ -105,13 +167,17 @@
 		844436611DF29086001DEA32 /* KyuntoApp */ = {
 			isa = PBXGroup;
 			children = (
-				844436621DF29086001DEA32 /* AppDelegate.swift */,
-				844436641DF29086001DEA32 /* ViewController.swift */,
+				2D090FF61DFAA0AF008A8A79 /* HomeViewController */,
 				844436921DF29C59001DEA32 /* TableViewController */,
 				844436661DF29086001DEA32 /* Main.storyboard */,
+				844436621DF29086001DEA32 /* AppDelegate.swift */,
 				844436691DF29087001DEA32 /* Assets.xcassets */,
 				8444366B1DF29087001DEA32 /* LaunchScreen.storyboard */,
+				2D090FF91DFAA4F0008A8A79 /* logo.png */,
 				8444366E1DF29087001DEA32 /* Info.plist */,
+				2D090FFD1DFAA680008A8A79 /* LaunchsScreen.xib */,
+				844436641DF29086001DEA32 /* ViewController.swift */,
+				2D090FFF1DFAC334008A8A79 /* Boku2-Bold.otf */,
 			);
 			path = KyuntoApp;
 			sourceTree = "<group>";
@@ -137,6 +203,7 @@
 		844436921DF29C59001DEA32 /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2D0910011DFAC3EF008A8A79 /* KyuntoResources */,
 				844436951DF29CB8001DEA32 /* memoViewController.swift */,
 				844436971DF29EE8001DEA32 /* addViewController.swift */,
 				2D29DED81DF470CD00326C20 /* memoTableViewCell.swift */,
@@ -255,9 +322,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D0910191DFAD931008A8A79 /* kyunto_button.png in Resources */,
+				2D0910001DFAC334008A8A79 /* Boku2-Bold.otf in Resources */,
+				2D09100E1DFAC3EF008A8A79 /* heart_tab@2x.png.png in Resources */,
 				8444366D1DF29087001DEA32 /* LaunchScreen.storyboard in Resources */,
+				2D0910111DFAC3EF008A8A79 /* note_tab.png in Resources */,
+				2D09100D1DFAC3EF008A8A79 /* heart_tab.png in Resources */,
+				2D0910101DFAC3EF008A8A79 /* icon@2x.png.png in Resources */,
+				2D0910121DFAC3EF008A8A79 /* note_tab@2x.png.png in Resources */,
+				2D0910151DFAC3EF008A8A79 /* PoinGetView@2x.png.png in Resources */,
+				2D0910171DFAC3EF008A8A79 /* twitter_logo_yellow01@2x.png.png in Resources */,
+				2D090FFA1DFAA4F1008A8A79 /* logo.png in Resources */,
+				2D0910161DFAC3EF008A8A79 /* twitter_logo_yellow01.png in Resources */,
 				8444366A1DF29087001DEA32 /* Assets.xcassets in Resources */,
+				2D09100F1DFAC3EF008A8A79 /* icon.png in Resources */,
+				2D0910141DFAC3EF008A8A79 /* PoinGetView.png in Resources */,
+				2D0910131DFAC3EF008A8A79 /* Pin_icon.png in Resources */,
 				844436681DF29086001DEA32 /* Main.storyboard in Resources */,
+				2D090FFE1DFAA680008A8A79 /* LaunchsScreen.xib in Resources */,
 				2D29DEDB1DF470CD00326C20 /* memoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,10 +365,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D090FF31DFA9E76008A8A79 /* animationButton.swift in Sources */,
 				844436651DF29086001DEA32 /* ViewController.swift in Sources */,
 				844436961DF29CB8001DEA32 /* memoViewController.swift in Sources */,
 				844436981DF29EE8001DEA32 /* addViewController.swift in Sources */,
 				2D29DEDA1DF470CD00326C20 /* memoTableViewCell.swift in Sources */,
+				2D090FF51DFA9EE1008A8A79 /* HomeViewController.swift in Sources */,
 				844436631DF29086001DEA32 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

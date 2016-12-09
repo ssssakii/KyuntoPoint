@@ -15,6 +15,9 @@ class addViewController: UIViewController, UITextViewDelegate {
     @IBOutlet var dateLabel:UILabel!
     @IBOutlet var addPlaceTextView: UITextView!
     
+    let saveData: UserDefaults = UserDefaults.standard
+    var point  = 0
+    
     var memoArray: [Dictionary<String,String>] = []
     var dateArray: [String] = []
     /*var placeArray: [String] = []    //memoのUserdefaults*/
@@ -36,6 +39,11 @@ class addViewController: UIViewController, UITextViewDelegate {
             
         }*/
         
+        point = saveData.object(forKey: "kyunKey") as! Int
+        
+        
+        
+        
         //日付
         let date = NSDate()
         let format = DateFormatter()
@@ -54,7 +62,37 @@ class addViewController: UIViewController, UITextViewDelegate {
         //デリゲート
         addMemoTextView.delegate = self
         addPlaceTextView.delegate = self
+        
+        
+        
+        
+        // 仮のサイズでツールバー生成
+        let kbToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
+        kbToolBar.barStyle = UIBarStyle.default  // スタイルを設定
+        kbToolBar.sizeToFit()  // 画面幅に合わせてサイズを変更
+        // スペーサー
+        let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: self, action: nil)
+        // 閉じるボタン
+        let commitButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: "commitButtonTapped")
+        
+        kbToolBar.items = [spacer, commitButton]
+        
+        
+        addMemoTextView.inputAccessoryView = kbToolBar
+        addPlaceTextView.inputAccessoryView = kbToolBar
+        
+        
+        
     }
+    
+    func commitButtonTapped (){
+        self.view.endEditing(true)
+    }
+    
+    
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -64,15 +102,9 @@ class addViewController: UIViewController, UITextViewDelegate {
     @IBAction func saveMemo() {
         print("PUSH save")
         let memoDictionary = ["memo": addMemoTextView.text!,"place": addPlaceTextView.text!]
+        print(memoDictionary)
         
         //配列に保存
-        //memoArray.append(addMemoTextView.text)
-        
-        //付け足した
-        /*if saveMemoData.array(forKey: "MEMO") != nil{
-            memoArray = saveMemoData.array(forKey: "MEMO") as![Dictionary<String,String>]
-            
-        }*/
         
         memoArray.append(memoDictionary)
         NSLog("memoArray: %@", String(describing: memoArray))
@@ -115,7 +147,7 @@ class addViewController: UIViewController, UITextViewDelegate {
     func textFieldShouldReturn(_ addMemoTextView: UITextView) -> Bool {
         // キーボードを隠す
         addMemoTextView.resignFirstResponder()
-        NSLog("")
+        NSLog("キーボード　隠す")
         return true
     }
     
@@ -131,7 +163,7 @@ class addViewController: UIViewController, UITextViewDelegate {
         // Twitterダイアログを作る
         let cv = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
         // 文字追加
-        //cv?.setInitialText("テスト: 今日はポイント" + (String(point)) + "貯めました!"+memoArray)
+        cv?.setInitialText("今日はポイント" + (String(point)) + "貯めました!")
         //cv?.setInitialText("今日のきゅんと："+memoArray[0,0])
         // 投稿ダイアログを表示する
         self.present(cv!, animated: true, completion: nil)
