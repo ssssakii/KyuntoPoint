@@ -22,15 +22,17 @@ class memoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     let saveMemoData: UserDefaults = UserDefaults.standard
     //let savePlaceData: UserDefaults = UserDefaults.standard
     let saveDateData: UserDefaults = UserDefaults.standard
-    let saveIndexData: UserDefaults = UserDefaults.standard
+    //let saveIndexData: UserDefaults = UserDefaults.standard
     
-   var dateIndex=0
+  // var dateIndex=0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //memotableView.xibとの連携のnib
         var nib = UINib(nibName: "memoTableViewCell", bundle: nil)
         table.register(nib, forCellReuseIdentifier: "cell")
+        
+        //table.dateSource = self
                 
         print("_______memoViewController________")
 
@@ -56,15 +58,12 @@ class memoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         //配列memoArrayにデータを入れる
         if saveMemoData.array(forKey: "MEMO") != nil {
             memoArray = saveMemoData.array(forKey: "MEMO") as! [Dictionary<String,String>]
-            print(memoArray[0])
+            //print(memoArray[0])
         }
         if saveDateData.array(forKey: "DATE") != nil {
             dateArray = saveDateData.array(forKey: "DATE") as! [String]
         }
-        /*if savePlaceData.array(forKey: "PLACE") != nil {
-            placeArray = savePlaceData.array(forKey: "PLACE") as! [String]
-        }
-        */
+      
         table.reloadData()
     }
 
@@ -74,6 +73,8 @@ class memoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     //セルの数を指定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("tableViewのセルの数指定なう")
+        NSLog("memoArray.count:%d",memoArray.count)
+        NSLog("dateArray.count:%d",dateArray.count)
         return memoArray.count
     }
     
@@ -88,9 +89,11 @@ class memoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         //_ = table.viewWithTag(1) as! UILabel // textLabel
         //cell上のtextLabelに、配列memoArrayの中身を表示
         //cell?.textLabel?.text = memoArray[indexPath.row]
+        
+        
         cell.memoLabel.text = nowIndexPathDictionary["memo"]
-        cell.dateLabel.text = dateArray[indexPath.row]
-        cell.placeLabel.text = nowIndexPathDictionary["place"]
+        cell.dateLabel.text = dateArray[dateArray.count-1]
+        cell.placeLabel.text = "@"+nowIndexPathDictionary["place"]!
         return cell
     }
 }

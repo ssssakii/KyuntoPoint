@@ -24,7 +24,7 @@ class addViewController: UIViewController, UITextViewDelegate {
     let saveMemoData: UserDefaults = UserDefaults.standard
     //dateのuserdefaults
     let saveDateData: UserDefaults = UserDefaults.standard
-    let saveIndexData: UserDefaults = UserDefaults.standard
+    //let saveData: UserDefaults = UserDefaults.standard
    
     var indexDate = 0
     
@@ -34,12 +34,18 @@ class addViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*if saveMemoData.array(forKey: "MEMO") != nil{
+        if saveMemoData.array(forKey: "MEMO") != nil{
             memoArray = saveMemoData.array(forKey: "MEMO") as![Dictionary<String,String>]
             
-        }*/
+        }
         
-        point = saveData.object(forKey: "kyunKey") as! Int
+        
+        if saveDateData.array(forKey: "DATE") != nil {
+            dateArray = saveDateData.array(forKey: "DATE") as! [String]
+        }
+
+                
+        //point = saveData.object(forKey: "kyunKey") as! Int
         
         
         
@@ -51,8 +57,9 @@ class addViewController: UIViewController, UITextViewDelegate {
         let strDate = format.string(from: date as Date)
         dateLabel.text = strDate
         
-         dateArray.append(strDate)
-        
+       
+        dateArray.append(strDate)
+        NSLog("date.count:%d",dateArray.count)
         
         saveDateData.set(dateArray, forKey: "DATE")
         saveDateData.synchronize()
@@ -105,7 +112,7 @@ class addViewController: UIViewController, UITextViewDelegate {
         print(memoDictionary)
         
         //配列に保存
-        
+        //dateArray.append(strDate)
         memoArray.append(memoDictionary)
         NSLog("memoArray: %@", String(describing: memoArray))
         //UserDefaultsに保存
@@ -122,6 +129,7 @@ class addViewController: UIViewController, UITextViewDelegate {
         /******Twitter投稿するかどうか****/
         if twitterOn {
             self.toTwitter()
+            self.toSegue()
         }
         
         //memoViewControllerに遷移の3行
@@ -144,13 +152,13 @@ class addViewController: UIViewController, UITextViewDelegate {
     }
     */
     /***** 改行ボタンを押した時の処理 *******/
-    func textFieldShouldReturn(_ addMemoTextView: UITextView) -> Bool {
+    /*func textFieldShouldReturn(_ addMemoTextView: UITextView) -> Bool {
         // キーボードを隠す
         addMemoTextView.resignFirstResponder()
         NSLog("キーボード　隠す")
         return true
     }
-    
+    */
     /****** Twitterスイッチ *********/
     @IBAction func TwitterChanged(_ sender: UISwitch) {
         if twitterSwitch.isOn {
@@ -162,8 +170,11 @@ class addViewController: UIViewController, UITextViewDelegate {
     func toTwitter(){
         // Twitterダイアログを作る
         let cv = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        
+        point = saveData.integer(forKey: "kyuKey")
+        NSLog("point:%d",point)
         // 文字追加
-        cv?.setInitialText("今日はポイント" + (String(point)) + "貯めました!")
+        cv?.setInitialText("今日のキュントポイントは"+String(point)+"貯まりました！")
         //cv?.setInitialText("今日のきゅんと："+memoArray[0,0])
         // 投稿ダイアログを表示する
         self.present(cv!, animated: true, completion: nil)

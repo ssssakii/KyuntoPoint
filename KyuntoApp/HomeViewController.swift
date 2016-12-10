@@ -11,9 +11,9 @@ import UIKit
 class HomeViewController: UIViewController {
     
     //キュントボタン宣言
-    @IBOutlet weak var AlertView: UIView!
+    //@IBOutlet weak var AlertView: UIView!
     @IBOutlet var KyuntoButton: animationButton!
-    
+    @IBOutlet var alertButton:UIButton!
     
     //キュントポイント
     var point : Int = 0
@@ -28,14 +28,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-               //きゅんを貯めていく
-        if(point>0){
-            point = point + 1
-        }else{
-            point = point + saveData.integer(forKey: "kyunKey")+1
-        }
         
-        label.text=String(point)
+       
         
         //UserDefalutsを書き込む（きゅんを保存）
         saveData.set(point,forKey: "kyunKey")
@@ -46,7 +40,7 @@ class HomeViewController: UIViewController {
         
         //label.text = "\(point)キュン"
         //アラートview
-        AlertView.isHidden = true
+        alertButton.isHidden = true
         
         label.text = String(saveData.integer(forKey: "kyuKey"))
         
@@ -81,7 +75,11 @@ class HomeViewController: UIViewController {
         NSLog("動いてますよ")
         
         //キュントカウント
-        point = point + 1
+        if(point>0){
+            point = point + 1
+        }else{
+            point = point + saveData.integer(forKey: "kyunKey")+1
+        }
         label.text = "\(point)キュン"
         print("Kyun")
         //AlertView.isHidden = false
@@ -90,7 +88,7 @@ class HomeViewController: UIViewController {
         
         //遅延行為
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
-            self.AlertView.isHidden = false
+            self.alertButton.isHidden = false
         }
         /*UIView.animateWithDuration(2.0,
          
@@ -114,6 +112,14 @@ class HomeViewController: UIViewController {
          )*/
         
     }
+    
+    
+    @IBAction func alert(){
+            self.alertButton.isHidden = true
+    
+    }
+    
+    
     
     //    func tappedButton(_ sender : animationButton) {
     //        if sender.isSelected {

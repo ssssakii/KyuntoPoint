@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window!.backgroundColor = UIColor(red: 255/255, green: 171/255, blue: 147/255, alpha: 1)
+        self.window!.backgroundColor = UIColor(red: 255/255, green: 200/255, blue: 18/255, alpha: 1)
         self.window!.makeKeyAndVisible()
         
         // rootViewController from StoryBoard

@@ -9,14 +9,10 @@
 /* Begin PBXBuildFile section */
 		2D090FF31DFA9E76008A8A79 /* animationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D090FF21DFA9E76008A8A79 /* animationButton.swift */; };
 		2D090FF51DFA9EE1008A8A79 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D090FF41DFA9EE1008A8A79 /* HomeViewController.swift */; };
-		2D090FFA1DFAA4F1008A8A79 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D090FF91DFAA4F0008A8A79 /* logo.png */; };
 		2D090FFE1DFAA680008A8A79 /* LaunchsScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D090FFD1DFAA680008A8A79 /* LaunchsScreen.xib */; };
 		2D0910001DFAC334008A8A79 /* Boku2-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2D090FFF1DFAC334008A8A79 /* Boku2-Bold.otf */; };
-		2D09100D1DFAC3EF008A8A79 /* heart_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910021DFAC3EF008A8A79 /* heart_tab.png */; };
 		2D09100E1DFAC3EF008A8A79 /* heart_tab@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910031DFAC3EF008A8A79 /* heart_tab@2x.png.png */; };
-		2D09100F1DFAC3EF008A8A79 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910041DFAC3EF008A8A79 /* icon.png */; };
 		2D0910101DFAC3EF008A8A79 /* icon@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910051DFAC3EF008A8A79 /* icon@2x.png.png */; };
-		2D0910111DFAC3EF008A8A79 /* note_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910061DFAC3EF008A8A79 /* note_tab.png */; };
 		2D0910121DFAC3EF008A8A79 /* note_tab@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910071DFAC3EF008A8A79 /* note_tab@2x.png.png */; };
 		2D0910131DFAC3EF008A8A79 /* Pin_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910081DFAC3EF008A8A79 /* Pin_icon.png */; };
 		2D0910141DFAC3EF008A8A79 /* PoinGetView.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910091DFAC3EF008A8A79 /* PoinGetView.png */; };
@@ -24,8 +20,13 @@
 		2D0910161DFAC3EF008A8A79 /* twitter_logo_yellow01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D09100B1DFAC3EF008A8A79 /* twitter_logo_yellow01.png */; };
 		2D0910171DFAC3EF008A8A79 /* twitter_logo_yellow01@2x.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D09100C1DFAC3EF008A8A79 /* twitter_logo_yellow01@2x.png.png */; };
 		2D0910191DFAD931008A8A79 /* kyunto_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0910181DFAD931008A8A79 /* kyunto_button.png */; };
+		2D0C918F1DFAFF6500A9DD93 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C918E1DFAFF6500A9DD93 /* logo.png */; };
 		2D29DEDA1DF470CD00326C20 /* memoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D29DED81DF470CD00326C20 /* memoTableViewCell.swift */; };
 		2D29DEDB1DF470CD00326C20 /* memoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D29DED91DF470CD00326C20 /* memoTableViewCell.xib */; };
+		2DE704841DFB202E00CFDBBE /* heart_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE704831DFB202E00CFDBBE /* heart_tab.png */; };
+		2DE704861DFB203600CFDBBE /* note_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE704851DFB203600CFDBBE /* note_tab.png */; };
+		2DE704881DFB20A700CFDBBE /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE704871DFB20A700CFDBBE /* MyTableViewController.swift */; };
+		2DE7048C1DFB230500CFDBBE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE7048B1DFB230500CFDBBE /* icon.png */; };
 		844436631DF29086001DEA32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436621DF29086001DEA32 /* AppDelegate.swift */; };
 		844436651DF29086001DEA32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844436641DF29086001DEA32 /* ViewController.swift */; };
 		844436681DF29086001DEA32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844436661DF29086001DEA32 /* Main.storyboard */; };
@@ -57,14 +58,10 @@
 /* Begin PBXFileReference section */
 		2D090FF21DFA9E76008A8A79 /* animationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animationButton.swift; sourceTree = "<group>"; };
 		2D090FF41DFA9EE1008A8A79 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		2D090FF91DFAA4F0008A8A79 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		2D090FFD1DFAA680008A8A79 /* LaunchsScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchsScreen.xib; sourceTree = "<group>"; };
 		2D090FFF1DFAC334008A8A79 /* Boku2-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Boku2-Bold.otf"; sourceTree = "<group>"; };
-		2D0910021DFAC3EF008A8A79 /* heart_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_tab.png; sourceTree = "<group>"; };
 		2D0910031DFAC3EF008A8A79 /* heart_tab@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart_tab@2x.png.png"; sourceTree = "<group>"; };
-		2D0910041DFAC3EF008A8A79 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		2D0910051DFAC3EF008A8A79 /* icon@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png.png"; sourceTree = "<group>"; };
-		2D0910061DFAC3EF008A8A79 /* note_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note_tab.png; sourceTree = "<group>"; };
 		2D0910071DFAC3EF008A8A79 /* note_tab@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "note_tab@2x.png.png"; sourceTree = "<group>"; };
 		2D0910081DFAC3EF008A8A79 /* Pin_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pin_icon.png; sourceTree = "<group>"; };
 		2D0910091DFAC3EF008A8A79 /* PoinGetView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PoinGetView.png; sourceTree = "<group>"; };
@@ -72,8 +69,13 @@
 		2D09100B1DFAC3EF008A8A79 /* twitter_logo_yellow01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_logo_yellow01.png; sourceTree = "<group>"; };
 		2D09100C1DFAC3EF008A8A79 /* twitter_logo_yellow01@2x.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter_logo_yellow01@2x.png.png"; sourceTree = "<group>"; };
 		2D0910181DFAD931008A8A79 /* kyunto_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kyunto_button.png; sourceTree = "<group>"; };
+		2D0C918E1DFAFF6500A9DD93 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		2D29DED81DF470CD00326C20 /* memoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = memoTableViewCell.swift; sourceTree = "<group>"; };
 		2D29DED91DF470CD00326C20 /* memoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = memoTableViewCell.xib; sourceTree = "<group>"; };
+		2DE704831DFB202E00CFDBBE /* heart_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_tab.png; sourceTree = "<group>"; };
+		2DE704851DFB203600CFDBBE /* note_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note_tab.png; sourceTree = "<group>"; };
+		2DE704871DFB20A700CFDBBE /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		2DE7048B1DFB230500CFDBBE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		8444365F1DF29086001DEA32 /* KyuntoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KyuntoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844436621DF29086001DEA32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844436641DF29086001DEA32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,12 +130,12 @@
 		2D0910011DFAC3EF008A8A79 /* KyuntoResources */ = {
 			isa = PBXGroup;
 			children = (
+				2DE704831DFB202E00CFDBBE /* heart_tab.png */,
 				2D0910181DFAD931008A8A79 /* kyunto_button.png */,
-				2D0910021DFAC3EF008A8A79 /* heart_tab.png */,
 				2D0910031DFAC3EF008A8A79 /* heart_tab@2x.png.png */,
-				2D0910041DFAC3EF008A8A79 /* icon.png */,
+				2DE7048B1DFB230500CFDBBE /* icon.png */,
 				2D0910051DFAC3EF008A8A79 /* icon@2x.png.png */,
-				2D0910061DFAC3EF008A8A79 /* note_tab.png */,
+				2DE704851DFB203600CFDBBE /* note_tab.png */,
 				2D0910071DFAC3EF008A8A79 /* note_tab@2x.png.png */,
 				2D0910081DFAC3EF008A8A79 /* Pin_icon.png */,
 				2D0910091DFAC3EF008A8A79 /* PoinGetView.png */,
@@ -141,7 +143,8 @@
 				2D09100B1DFAC3EF008A8A79 /* twitter_logo_yellow01.png */,
 				2D09100C1DFAC3EF008A8A79 /* twitter_logo_yellow01@2x.png.png */,
 			);
-			path = KyuntoResources;
+			name = KyuntoResources;
+			path = TableViewController/KyuntoResources;
 			sourceTree = "<group>";
 		};
 		844436561DF29086001DEA32 = {
@@ -167,17 +170,19 @@
 		844436611DF29086001DEA32 /* KyuntoApp */ = {
 			isa = PBXGroup;
 			children = (
+				2D0910011DFAC3EF008A8A79 /* KyuntoResources */,
 				2D090FF61DFAA0AF008A8A79 /* HomeViewController */,
 				844436921DF29C59001DEA32 /* TableViewController */,
 				844436661DF29086001DEA32 /* Main.storyboard */,
 				844436621DF29086001DEA32 /* AppDelegate.swift */,
 				844436691DF29087001DEA32 /* Assets.xcassets */,
 				8444366B1DF29087001DEA32 /* LaunchScreen.storyboard */,
-				2D090FF91DFAA4F0008A8A79 /* logo.png */,
+				2D0C918E1DFAFF6500A9DD93 /* logo.png */,
 				8444366E1DF29087001DEA32 /* Info.plist */,
 				2D090FFD1DFAA680008A8A79 /* LaunchsScreen.xib */,
 				844436641DF29086001DEA32 /* ViewController.swift */,
 				2D090FFF1DFAC334008A8A79 /* Boku2-Bold.otf */,
+				2DE704871DFB20A700CFDBBE /* MyTableViewController.swift */,
 			);
 			path = KyuntoApp;
 			sourceTree = "<group>";
@@ -203,7 +208,6 @@
 		844436921DF29C59001DEA32 /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2D0910011DFAC3EF008A8A79 /* KyuntoResources */,
 				844436951DF29CB8001DEA32 /* memoViewController.swift */,
 				844436971DF29EE8001DEA32 /* addViewController.swift */,
 				2D29DED81DF470CD00326C20 /* memoTableViewCell.swift */,
@@ -326,16 +330,16 @@
 				2D0910001DFAC334008A8A79 /* Boku2-Bold.otf in Resources */,
 				2D09100E1DFAC3EF008A8A79 /* heart_tab@2x.png.png in Resources */,
 				8444366D1DF29087001DEA32 /* LaunchScreen.storyboard in Resources */,
-				2D0910111DFAC3EF008A8A79 /* note_tab.png in Resources */,
-				2D09100D1DFAC3EF008A8A79 /* heart_tab.png in Resources */,
 				2D0910101DFAC3EF008A8A79 /* icon@2x.png.png in Resources */,
 				2D0910121DFAC3EF008A8A79 /* note_tab@2x.png.png in Resources */,
+				2DE704841DFB202E00CFDBBE /* heart_tab.png in Resources */,
 				2D0910151DFAC3EF008A8A79 /* PoinGetView@2x.png.png in Resources */,
 				2D0910171DFAC3EF008A8A79 /* twitter_logo_yellow01@2x.png.png in Resources */,
-				2D090FFA1DFAA4F1008A8A79 /* logo.png in Resources */,
 				2D0910161DFAC3EF008A8A79 /* twitter_logo_yellow01.png in Resources */,
+				2DE704861DFB203600CFDBBE /* note_tab.png in Resources */,
 				8444366A1DF29087001DEA32 /* Assets.xcassets in Resources */,
-				2D09100F1DFAC3EF008A8A79 /* icon.png in Resources */,
+				2DE7048C1DFB230500CFDBBE /* icon.png in Resources */,
+				2D0C918F1DFAFF6500A9DD93 /* logo.png in Resources */,
 				2D0910141DFAC3EF008A8A79 /* PoinGetView.png in Resources */,
 				2D0910131DFAC3EF008A8A79 /* Pin_icon.png in Resources */,
 				844436681DF29086001DEA32 /* Main.storyboard in Resources */,
@@ -368,6 +372,7 @@
 				2D090FF31DFA9E76008A8A79 /* animationButton.swift in Sources */,
 				844436651DF29086001DEA32 /* ViewController.swift in Sources */,
 				844436961DF29CB8001DEA32 /* memoViewController.swift in Sources */,
+				2DE704881DFB20A700CFDBBE /* MyTableViewController.swift in Sources */,
 				844436981DF29EE8001DEA32 /* addViewController.swift in Sources */,
 				2D29DEDA1DF470CD00326C20 /* memoTableViewCell.swift in Sources */,
 				2D090FF51DFA9EE1008A8A79 /* HomeViewController.swift in Sources */,
@@ -466,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -509,7 +514,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -525,7 +530,7 @@
 				INFOPLIST_FILE = KyuntoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nozomeal.KyuntoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sakincho123.KyuntoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -539,7 +544,7 @@
 				INFOPLIST_FILE = KyuntoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nozomeal.KyuntoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sakincho123.KyuntoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
